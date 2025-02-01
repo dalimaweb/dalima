@@ -1,0 +1,96 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slick Slider Example</title>
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .slick-slide {
+            margin: 0 10px;
+        }
+        .slick-prev, .slick-next {
+            color: #333;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<section class="s_three_columns o_colored_level pt0 pb80">
+    <div class="container plans-container">
+        <div class="slider slick-initialized slick-slider slick-dotted"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
+            
+            
+            
+        <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4564px; transform: translate3d(-1956px, 0px, 0px); transition: transform 500ms ease 0s;"><div class="s_col_no_bgcolor slick-slide slick-cloned" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control02" style="width: 632px;" data-slick-index="-1" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60513-d7a7c358/dalima_corporate.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 632px;" data-slick-index="0" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60515-8db4031c/dalima_prestige.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide" tabindex="0" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01" style="width: 632px;" data-slick-index="1" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60514-542dd624/dalima_premium.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide slick-current slick-active" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02" style="width: 632px;" data-slick-index="2" aria-hidden="false">
+                <img src="https://www.dalima.co.mz/web/image/60513-d7a7c358/dalima_corporate.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide slick-cloned" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control00" style="width: 632px;" data-slick-index="3" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60515-8db4031c/dalima_prestige.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide slick-cloned" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control01" style="width: 632px;" data-slick-index="4" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60514-542dd624/dalima_premium.png" loading="lazy">
+            </div><div class="s_col_no_bgcolor slick-slide slick-cloned" tabindex="-1" role="tabpanel" id="" aria-describedby="slick-slide-control02" style="width: 632px;" data-slick-index="5" aria-hidden="true">
+                <img src="https://www.dalima.co.mz/web/image/60513-d7a7c358/dalima_corporate.png" loading="lazy">
+            </div></div></div><button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button><ul class="slick-dots" style="" role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 3" tabindex="-1">1</button></li><li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 3" tabindex="0" aria-selected="true">2</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 3" tabindex="-1">3</button></li></ul></div>
+    </div>
+</section>
+
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            slidesToShow: 3,  // Show 3 items at a time
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+
+</body></html>

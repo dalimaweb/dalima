@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalima</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-proxima-nova@1.0.1/style.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+        }
+
+
+        a {
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: unset !important;
+}
+
+        .hero-section {
+            width: 100%;
+            background: url('https://www.dalima.co.mz/web/image/14548-a2164d89/DALIMA_Teaser.gif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .location {
+            width: 100%;
+            background: url('./img/location.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+
+        .separator-bottom {
+
+            width: 100%;
+            background: url('https://www.dalima.co.mz/web/image/16602-55055438/files%20actualizadosAsset%2026%406x.png&quot');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 80vh;
+
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .slider img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .slick-slide {
+            margin: 0 10px;
+        }
+
+        .slick-prev,
+        .slick-next {
+            color: #333;
+            font-size: 24px;
+        }
+
+        section.about,
+        .footer,
+        .footer-section {
+            background: #000;
+        }
+
+        .logo{
+            width: 128px;
+        }
+
+        .nav-link{
+            color:#fff;
+        }
+
+        div.form-group a.btn-custom {
+    margin: auto;
+    border-style: solid;
+    background-color: #bd9400;
+    border-width: 1px;
+    width: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: 600;
+    background-color: #FF3762;
+    padding: 10px 25px;
+    border: 1px solid #FF3762;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 20px;
+    white-space: normal;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -khtml-transition: all 0.2s linear;
+}
+
+input.form-control {
+    height: calc(2em + 1rem + 2px);
+    padding: 9px 14px;
+    background: transparent;
+    border-color: #6B1C59;
+    color: #6B1C59;
+    border-width: 1px;
+}
+
+
+.about-title{
+    color: #FF3762;
+}
+
+
+.nav-link:focus, .nav-link:hover {
+    color: #fff;
+    text-decoration: underline #FF3762 !important;
+    text-decoration-thickness: 4px !important; /* Increase thickness */
+}
+
+
+.s_website_form[data-vcss="001"] .s_website_form_rows > .form-group {
+    margin-bottom: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.section-form{
+        padding-bottom: 100px;
+}
+
+.img-locais {
+    width: 28%;
+}
+
+.locais-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a.s_share_facebook,a.s_share_twitter,a.s_share_linkedin,a.s_share_whatsapp{
+    color: #fff;
+}
+
+section.about, .footer, .footer-section {
+    background: #000;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header id="home" data-anchor="true" data-name="Header" class="o_header_standard o_hoverable_dropdown">
+        <nav data-name="Navbar" class="navbar navbar-expand-lg navbar-light o_colored_level o_cc shadow-sm">
+            <div id="top_menu_container" class="container">
+                <a href="#home" class="navbar-brand logo mr-4">
+                    <span role="img" aria-label="Logo of Dalima" title="Dalima">
+                        <img src="https://www.dalima.co.mz/web/image/website/2/logo/Dalima?unique=78e6ef6" class="img img-fluid" alt="Dalima" loading="lazy">
+                    </span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top_menu_collapse" aria-controls="top_menu_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="top_menu_collapse" class="collapse navbar-collapse justify-content-end">
+                    <ul id="top_menu" class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a role="menuitem" href="#home" class="nav-link ">
+                                <span>HOME</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="menuitem" href="#somos" class="nav-link ">
+                                <span>SOMOS</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a role="menuitem" href="#locais" class="nav-link">
+                                <span>LOCAIS</span>
+                            </a>
+                        </li>
+                        <!--<li class="nav-item o_no_autohide_item">
+                            <a href="#" class="nav-link font-weight-bold">Sign in</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+
+
+    <div class="hero-section">
+
+    </div>
+
+
+    <!--About Section-->
+
+    <section class="about" id="somos">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1 class="about-title">SOMOS</h1>
+                    <p class="about-text">Agência de Media Digital focada no desenvolvimento
+                        criativo e publicidade das marcas, produtos e serviços.
+                        Há 15 anos que mantemos uma forte liderança no
+                        mercado Outdoor Digital, através da maior e mais
+                        avançada rede de Painéis Digitais Outdoor em
+                        Moçambique.</p>
+                    <p class="about-text">Garantimos todas as etapas duma realização, desde a
+                        montagem e manutenção dos equipamentos à criação e
+                        gestão de conteúdos, proporcionando um serviço
+                        personalizado, com alto nível de qualidade e exigência.
+                        Apresente-nos a sua marca, e nós mostrar-te-emos o
+                        poder por trás dela!</p>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <img src="img/Quem_somos_square.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Location-->
+    <div class="container-fluid location" id="locais">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="locais-img-container">
+                    <img src="https://web.archive.org/web/20220829184726im_/https://www.dalima.co.mz/web/image/16395-f4b77853/Asset%2032%402x.png" class="img-locais">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="s_allow_columns container">
+        <h1 style="text-align: left;">
+            <p class="title-section" style="color: rgb(0, 44, 70);">NETWORK</p>
+        </h1>
+        <p style="text-align: justify; color: rgb(110, 111, 113);">
+            A rede da DALIMA possui os mais icónicos locais da cidade de Maputo. Todos os locais da rede Digital são
+            estrategicamente escolhidos, de modo a viabilizar e maximizar
+            a exposição das marcas.</p>
+    </div>
+
+    <section class="s_three_columns o_colored_level pt0 pb80">
+        <div class="container plans-container">
+            <div class="slider">
+                <div class="s_col_no_bgcolor">
+                    <img src="https://www.dalima.co.mz/web/image/60513-d7a7c358/dalima_corporate.png" loading="lazy">
+                </div>
+                <div class="s_col_no_bgcolor">
+                    <img src="https://www.dalima.co.mz/web/image/60515-8db4031c/dalima_prestige.png" loading="lazy">
+                </div>
+                <div class="s_col_no_bgcolor">
+                    <img src="https://www.dalima.co.mz/web/image/60514-542dd624/dalima_premium.png" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                    <iframe loading="lazy" src="https://ultradevelopment.github.io/dalimamaps.github.io/anima.html"
+                        style="border:0;" width="100%" height="780px" frameborder="0"
+                        data-ruffle-polyfilled=""></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container-fluid separator-bottom">
+        <div class="row">
+
+        </div>
+    </div>
+
+    <!--Footer here-->
+    <section class="footer s_text_image pb32 o_colored_level pt72" data-snippet="s_image_text" data-name="Image - Text"
+        style="background-image: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 bb o_colored_level footer-last pb0" style="text-align: center;">
+                    <img src="/web/20220829184656im_/https://www.dalima.co.mz/web/image/17373-1292ec9a/Dalima_logo.gif"
+                        class="d-logo img img-fluid mx-auto" alt="" loading="lazy" data-original-title="" title=""
+                        aria-describedby="tooltip767410"
+                        style="animation-play-state: paused; transition: none 0s ease 0s;" data-original-id="15375"
+                        data-original-src="/web/image/15375-5a887393/15228.png" data-mimetype="image/png"
+                        data-resize-width="690">
+                    <div class="footer-d">
+                        <p>
+                        <p style="color: rgb(255, 55, 98); font-weight: bolder;">Siga nossas redes sociais</p>
+                        </p>
+                        <div data-snippet="s_share" class="s_share text-center no_icon_color" data-name="Share">
+                            <a href="https://www.facebook.com/DalimaLda" target="_blank" class="s_share_facebook"
+                                data-original-title="" title="">
+                                <i class="fa-brands fa-square-facebook fa-2x"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dalimacomoanima/" target="_blank" class="s_share_twitter"
+                                data-original-title="" title="">
+                                <i class="fa-brands fa-square-instagram fa-2x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/dalima-led-outdoor-advertising/" target="_blank"
+                                class="s_share_linkedin" data-original-title="" title="">
+                                <i class="fa-brands fa-linkedin fa-2x"></i>
+                            </a>
+                            <a href="https://www.youtube.com/user/daLimaMultimedia" target="_blank"
+                                class="s_share_whatsapp" data-original-title="" title="">
+                                <i class="fa-brands fa-square-youtube fa-2x"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+<!--Contact section-->
+    <section class="s_title o_colored_level pb40 pt130" data-vcss="001" data-snippet="s_title" data-name="Title" style="background-image: none; background-color: rgb(17, 17, 17) !important;" id="Contacto" data-anchor="true">
+        <div class="s_allow_columns container">
+          <h1 style="text-align: center;">
+            <font style="font-weight: bolder;" class="text-o-color-4">CONECTE-SE AGORA!</font>
+          </h1>
+        </div>
+      </section>
+
+<!--Form Contact-->
+<section class="section-form s_website_form o_colored_level pb136" data-vcss="001" data-snippet="s_website_form" data-name="Form" style="margin-top: -7px; background-color: rgb(17, 17, 17) !important; background-image: none;" data-original-title="" title="" aria-describedby="tooltip273123">
+    <div class="o_container_small container">
+      <form action="/web/20220829184656/https://www.dalima.co.mz/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true" data-success-mode="nothing" data-success-page="/contactus-thank-you" data-model_name="mail.mail">
+        <div class="s_website_form_rows row s_col_no_bgcolor" style="justify-content: center;" data-original-title="" title="" aria-describedby="tooltip507394">
+          <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="char" data-name="Field">
+            <input type="text" class="form-control s_website_form_input" placeholder="Nome*" name="NOME" required="1" id="o0tmur1sd6p6i" data-fill-with="name">
+          </div>
+          <div data-visibility-condition="" data-visibility-between="" data-type="char" data-name="Field" class="form-group s_website_form_field col-12 s_website_form_model_required">
+            <input type="text" class="form-control s_website_form_input" name="EMAIL" required="true" placeholder="Email*" id="owuzim8zdcq" data-fill-with="email">
+          </div>
+          <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_custom" data-type="tel" data-name="Field">
+            <input type="tel" class="form-control s_website_form_input" name="TELEFONE" required="true" value="" placeholder="Telefone*" id="o7k0c9qf5zp4" data-fill-with="telefone">
+          </div>
+          <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_model_required" data-type="char" data-name="Field">
+            <input type="text" class="form-control s_website_form_input" name="subject" required="true" value="" placeholder="Assunto*" id="ozhtk7zlp4ti" data-fill-with="subject">
+          </div>
+
+          <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_model_required" data-type="char" data-name="Field">
+            <input type="text" class="form-control s_website_form_input" name="subject" required="true" value="" placeholder="Empresa" id="ozhtk7zlp4ti" data-fill-with="subject">
+          </div>
+          <div data-visibility-condition="" data-visibility-between="" class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
+            <textarea class="form-control s_website_form_input" name="MENSAGEM" required="1" placeholder="Messagem*" id="o91dca94r9wh" rows="6"></textarea>
+          </div>
+          <div class="form-group s_website_form_field col-12    s_website_form_dnone" data-name="Field">
+            <div class="row s_col_no_resize s_col_no_bgcolor">
+              <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px">
+                <span class="s_website_form_label_content"></span>
+              </label>
+              <div class="col-sm">
+                <input type="hidden" class="form-control s_website_form_input" name="email_to" value="comercial@dalima.co.mz">
+                <div class="s_website_form_field_description small form-text text-muted">
+        Separate email addresses with a comma.
+    </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group btn-send col-12 s_website_form_submit pb4 pt4 text-center s_website_form_no_submit_label" style="margin-top: 20px;" data-name="Submit Button" data-original-title="" title="" aria-describedby="tooltip99167">
+            <div style="width: 200px;" class="s_website_form_label"></div>
+            <span id="s_website_form_result" class="text-success ml8"></span>
+            <a href="#" role="button" class="s_website_form_send o_animating btn btn-custom" data-original-title="" title="">Enviar</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+<!--copyright section-->
+    <section class="s_text_block pt40 pb40 footer-section o_colored_level" data-snippet="s_text_block" data-name="Text"
+        style="background-image: none;" data-original-title="" title="" aria-describedby="tooltip885166">
+        <div class="container s_allow_columns form-contact">
+            <div class="row" data-original-title="" title="" aria-describedby="tooltip660715">
+                <div class="o_colored_level col-lg-4 to-hide">
+                    <p>
+                        <a href="#home">
+                            <font style="font-weight: bolder; font-size: 18px;" class="text-white">HOME</font>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#somos">
+                            <font style="font-weight: bolder; font-size: 18px;" class="text-white">SOMOS</font>
+                        </a>
+                    </p>
+                    <p>
+                        <a href="#locais">
+                            <font style="font-weight: bolder; font-size: 18px;" class="text-white">LOCAIS</font>
+                        </a>
+                    </p>
+                    
+                </div>
+                <div class="o_colored_level col-lg-4 to-center" data-original-title="" title=""
+                    aria-describedby="tooltip901940">
+                    <p>
+                        <span style="font-weight: bolder;">
+                            <font style="font-size: 18px;" class="text-white">Contacts</font>
+                        </span>
+                    </p>
+                    <p data-original-title="" title="" aria-describedby="tooltip978694">
+                        <font style="font-size: 14px; color: #aaaaaa; font-weight: bolder;">Commercial:</font>
+                        <br>
+                        <font style="font-size: 14px;" class="text-white">+258 86 407 0001</font>
+                        <br>
+                        <a href="https://web.archive.org/web/20220829184656/mailto:comercial@dalima.co.mz"
+                            data-original-title="" title="">
+                            <font style="font-size: 14px;" class="text-white" data-original-title="" title=""
+                                aria-describedby="tooltip959498">comercial@dalima.co.mz</font>
+                        </a>
+                        <br>
+                        <br>
+                        <font style="font-size: 14px; color: #aaaaaa; font-weight: bolder;">Endereço </font><br>
+                        <font style="font-size: 14px;" class="text-white">Av. 24 de Julho Cruzamento com a Julius Nyeres</font>
+                        <br>
+                        <font style="font-size: 14px;" class="text-white">Maputo, Moçambique</font>
+                        <br>
+                    </p>
+                </div>
+                <div class="o_colored_level col-lg-4 to-center">
+                    <p>
+                        <font style="font-size: 18px; font-weight: bolder;" data-original-title="" title=""
+                            aria-describedby="tooltip558967" class="text-white">Subscreva a Nossa Newsletter</font>
+                    </p>
+                    <div class="s_newsletter_subscribe_form js_subscribe" data-vxml="001" data-list-id="2"
+                        data-name="Newsletter" data-snippet="s_newsletter_subscribe_form">
+                        <div class="input-group">
+                            <input type="email" name="email" class="js_subscribe_email form-control"
+                                placeholder="o seu e-mail">
+                            <span class="input-group-append">
+                                <a role="button" href="#" class="js_subscribe_btn o_submit btn newsletter btn-custom"
+                                    data-original-title="" title="" style="">Subscrever</a>
+                                <a role="button" href="#"
+                                    class="btn btn-success js_subscribed_btn o_submit o_default_snippet_text d-none"
+                                    disabled="disabled">Obrigado</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (required for Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
