@@ -13,7 +13,7 @@ video {
 }
 
 input.form-control {
-    border-radius: 8px !important;
+    border-radius: 0px 0px 4px 4px !important;
     color: #6B1C59 !important;
 }
 
@@ -303,68 +303,50 @@ div.no-gutters {
 }
 
 
-div.color-style {
-    span {
-        color: black;
-
-        &:hover {
-            color: #ea0032;
-
-            i {
-                color: #ea0032;
-            }
-        }
-    }
-
-    i {
-        color: black;
-    }
-
-    a {
-        color: black;
-
-        &:hover {
-            color: #ea0032;
-        }
-    }
+/*Clean till here*/
+div.color-style span {
+    color: black;
 }
 
-div.d-print-none {
-    ul.bs-sidenav {
-        li {
-            a {
-                color: black;
-
-                &:hover {
-                    color: #ea0032;
-                }
-            }
-
-        }
-    }
+div.color-style span:hover {
+    color: #ea0032;
 }
 
-// input{
-//     accent-color: #e91e63;
-// }
-
-ol.o_portal_submenu {
-    li.breadcrumb-item {
-        a {
-            color: black;
-
-            &:hover {
-                color: #e91e63;
-                text-decoration: none;
-            }
-        }
-    }
+div.color-style span:hover i {
+    color: #ea0032;
 }
 
-div.o_wblog_post_content_field {
-    p {
-        padding: 0px 8rem 0px 8rem;
-    }
+div.color-style i {
+    color: black;
+}
+
+div.color-style a {
+    color: black;
+}
+
+div.color-style a:hover {
+    color: #ea0032;
+}
+
+div.d-print-none ul.bs-sidenav li a {
+    color: black;
+}
+
+div.d-print-none ul.bs-sidenav li a:hover {
+    color: #ea0032;
+}
+
+ol.o_portal_submenu li.breadcrumb-item a {
+    color: black;
+}
+
+ol.o_portal_submenu li.breadcrumb-item a:hover {
+    color: #e91e63;
+    text-decoration: none;
+}
+
+div.o_wblog_post_content_field p {
+    padding: 0px 8rem 0px 8rem;
 }
 
 span.text-danger {
@@ -382,61 +364,52 @@ a.js_subscribe_btn {
     font-size: 1rem !important;
 }
 
-#o_portal_navbar_content {
-    input {
-        color: black !important;
-        height: 38px;
-
-        &:focus {
-            color: black !important;
-        }
-    }
+#o_portal_navbar_content input {
+    color: black !important;
+    height: 38px;
 }
 
-td {
-    a {
-        color: black;
-    }
+#o_portal_navbar_content input:focus {
+    color: black !important;
 }
 
-div#list_website_pages {
-    td {
-        color: white;
-
-        i.fa-check {
-            color: #e91e63 !important;
-        }
-
-        a {
-            color: white;
-
-            &:hover {
-                color: #e91e63;
-            }
-        }
-    }
+td a {
+    color: black;
 }
 
-div#basic_page_info,
-div#advances_page_info {
-    input {
-        color: black !important;
-        height: 38px;
-
-        &:focus {
-            color: black !important;
-        }
-    }
+div#list_website_pages td {
+    color: white;
 }
 
-div.alert-info {
-    a {
-        color: rgba(33, 37, 41, 0.7);
+div#list_website_pages td i.fa-check {
+    color: #e91e63 !important;
+}
 
-        &:hover {
-            color: #e91e63;
-        }
-    }
+div#list_website_pages td a {
+    color: white;
+}
+
+div#list_website_pages td a:hover {
+    color: #e91e63;
+}
+
+div#basic_page_info input,
+div#advances_page_info input {
+    color: black !important;
+    height: 38px;
+}
+
+div#basic_page_info input:focus,
+div#advances_page_info input:focus {
+    color: black !important;
+}
+
+div.alert-info a {
+    color: rgba(33, 37, 41, 0.7);
+}
+
+div.alert-info a:hover {
+    color: #e91e63;
 }
 
 .form-control {
@@ -452,55 +425,35 @@ div.modal-pl0 {
     border-radius: 0px !important;
 }
 
-a.btn-secondary {
-    &:hover {
-        color: #e91e63;
-        background-color: transparent;
-        border: 1px solid #e91e63;
-    }
+a.btn-secondary:hover,
+button.btn-secondary:hover {
+    color: #e91e63;
+    background-color: transparent;
+    border: 1px solid #e91e63;
 }
 
-button.btn-secondary {
-    &:hover {
-        color: #e91e63;
-        background-color: transparent;
-        border: 1px solid #e91e63;
-    }
+a.btn-primary:hover,
+button.btn-primary:hover {
+    color: #e91e63;
+    background-color: transparent;
+    border: 1px solid #e91e63;
 }
-
-
-a.btn-primary {
-    &:hover {
-        color: #e91e63;
-        background-color: transparent;
-        border: 1px solid #e91e63;
-    }
-}
-
-button.btn-primary {
-    &:hover {
-        color: #e91e63;
-        background-color: transparent;
-        border: 1px solid #e91e63;
-    }
-}
-
 
 a.small {
     color: rgba(33, 37, 41, 0.7);
+}
 
-    &:hover {
-        color: #e91e63;
-    }
+a.small:hover {
+    color: #e91e63;
 }
 
 a {
     color: #FFFFFF;
+}
 
-    &:hover {
-        color: #e91e63;
-        text-decoration: none;
-    }
+a:hover {
+    color: #e91e63;
+    text-decoration: none;
 }
 
 h1,
@@ -517,8 +470,8 @@ h6,
 .h6 {
     font-family: 'ProximaNovaA-Bold', sans-serif;
 }
-
-.btn {
+/*Removed till here*/
+. btn {
     font-family: 'ProximaNovaA-Bold';
     padding: 10px 25px;
 }
@@ -1202,14 +1155,6 @@ div.carousel-item {
     }
 }
 
-.nav-pills {
-    .nav-link {
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        font-weight: 500;
-        color: white;
-        font-family: 'ProximaNovaA-Bold', sans-serif;
-    }
 
     .prestige:hover {
         /*color: #EF4D46;*/
