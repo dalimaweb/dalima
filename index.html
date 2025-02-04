@@ -199,7 +199,7 @@
         }
 
         .nav-link:focus,
-        .nav-link:hover {
+        .nav-link:hover,.footer-link:hover {
             color: #fff;
             text-decoration: underline #FF3762 !important;
             text-decoration-thickness: 4px !important;
@@ -274,10 +274,28 @@
         @media(max-width:720px) {
 
             .separator-bottom {
+    background-attachment: unset;
+    height: 265px;
+    background-size: contain;
+}
+            .locais-img-container {
+    height: 250px;
+}
 
-                background-attachment: ;
 
-            }
+.location {
+    background-size: cover;
+    height: inherit;
+    background-attachment: unset;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.o_colored_level.o_cc.shadow-sm {
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+}
+
+
         }
     </style>
 
@@ -562,17 +580,17 @@
             <div class="row" data-original-title="" title="" aria-describedby="tooltip660715">
                 <div class="o_colored_level col-lg-4 to-hide">
                     <p>
-                        <a href="#home">
+                        <a class="footer-link" href="#home">
                             <span style="font-weight: bolder; font-size: 18px;" class="text-white">HOME</span>
                         </a>
                     </p>
                     <p>
-                        <a href="#somos">
+                        <a class="footer-link" href="#somos">
                             <span style="font-weight: bolder; font-size: 18px;" class="text-white">SOMOS</span>
                         </a>
                     </p>
                     <p>
-                        <a href="#locais">
+                        <a class="footer-link" href="#locais">
                             <span style="font-weight: bolder; font-size: 18px;" class="text-white">LOCAIS</span>
                         </a>
                     </p>
