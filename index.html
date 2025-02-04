@@ -23,13 +23,31 @@
 
     <style>
         body {
-
+            font-family: 'Proxima_Nova';
             margin: 0;
             padding: 0;
             background: #f8f9fa;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
+
+
+        @font-face {
+            font-family: 'Proxima_Nova';
+            src: url('/fonts/ProximaNovaA-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'proximaNovaBold';
+            src: url('/fonts/ProximaNovaA-Bold.ttf');
+        }
+
+        a {
+            font-family: 'proximaNovaBold';
+        }
+
 
         h1,
         h2,
@@ -43,15 +61,20 @@
         .h4,
         .h5,
         .h6 {
-            font-family: 'ProximaNovaA-Bold', sans-serif;
+            font-family: 'proximaNovaBold';
+            font-weight: bolder;
         }
 
-        p{
+        p {
             font-weight: bold;
         }
 
         .row {
             padding: 0 !important;
+        }
+
+        li.nav-item a {
+            font-weight: 800;
         }
 
         a {
@@ -76,17 +99,28 @@
             background-size: cover;
             height: 100vh;
             background-attachment: fixed;
-            -webkit-background-attachment: fixed;
+            -webkit-background-attachment: scroll;
+
         }
+
+
+
 
         .separator-bottom {
             width: 100%;
             background-image: url('https://www.dalima.co.mz/web/image/16602-55055438/files%20actualizadosAsset%2026%406x.png');
+            background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            background-attachment: fixed;
-            -webkit-background-attachment: fixed;
+            height: 400px;
+            /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            /* Adjust text color if needed */
             height: 80vh;
         }
 
@@ -203,8 +237,6 @@
         .footer,
         .footer-section {
             background: #000;
-            padding-top: 100px;
-            padding-bottom: 100px;
         }
 
         /* WebKit Specific Fixes */
@@ -219,24 +251,34 @@
             -webkit-appearance: none;
         }
 
-        .col-about-description{
+        .col-about-description {
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
 
         a.js_subscribe_btn.o_submit.btn.newsletter.btn-custom {
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-}
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+        }
 
-.js_subscribe_btn:hover{
-    background-color: #dd3f61;
-    color: #fff;
-}
+        .js_subscribe_btn:hover {
+            background-color: #dd3f61;
+            color: #fff;
+        }
+
+
+        @media(max-width:720px) {
+
+            .separator-bottom {
+
+                background-attachment: ;
+
+            }
+        }
     </style>
 
 
@@ -371,11 +413,15 @@
     </section>
 
 
-    <div class="container-fluid separator-bottom">
-        <div class="row">
 
+    <section class="separator-section parallax">
+        <div class="container-fluid separator-bottom">
+            <div class="row">
+                <!-- Your content here -->
+            </div>
         </div>
-    </div>
+    </section>
+
 
     <!--Footer here-->
     <section class="footer s_text_image pb32 o_colored_level pt72" data-snippet="s_image_text" data-name="Image - Text"
@@ -544,8 +590,7 @@
                         <br>
                         <span style="font-size: 14px;" class="text-white">+258 86 407 0001</span>
                         <br>
-                        <a href="mailto:comercial@dalima.co.mz"
-                            data-original-title="" title="">
+                        <a href="mailto:comercial@dalima.co.mz" data-original-title="" title="">
                             <span style="font-size: 14px;" class="text-white" data-original-title="" title=""
                                 aria-describedby="tooltip959498">comercial@dalima.co.mz</span>
                         </a>
@@ -617,7 +662,14 @@
             });
         });
     </script>
+<script>
+    window.addEventListener("scroll", function () {
+    let parallax = document.querySelector(".parallax");
+    let scrollPosition = window.pageYOffset;
+    parallax.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+});
 
+</script>
 </body>
 
 </html>
