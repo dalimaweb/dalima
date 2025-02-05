@@ -29,7 +29,9 @@
             background: #f8f9fa;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
-        }
+ 
+}
+        
 
 
         @font-face {
@@ -59,12 +61,12 @@
         .h4,
         .h5,
         .h6 {
-            font-family: 'fonts/Proxima Nova Bold.otf',sans-serif;
+            font-family: 'fonts/Proxima Nova Bold.otf', sans-serif;
             font-weight: bolder;
         }
 
         p {
-            font-weight: bold;
+            font-size: 1.1em;
         }
 
         .row {
@@ -96,8 +98,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;
-            background-attachment: fixed;
-            -webkit-background-attachment: scroll;
+            background-attachment: fixed; 
+            padding-right: unset;
+            padding-left: unset;
 
         }
 
@@ -120,6 +123,9 @@
             color: white;
             /* Adjust text color if needed */
             height: 80vh;
+
+            padding-right: unset;
+            padding-left: unset;
         }
 
         .container {
@@ -197,7 +203,8 @@
         }
 
         .nav-link:focus,
-        .nav-link:hover,.footer-link:hover {
+        .nav-link:hover,
+        .footer-link:hover {
             color: #fff;
             text-decoration: underline #FF3762 !important;
             text-decoration-thickness: 4px !important;
@@ -269,29 +276,39 @@
         }
 
 
+        .location-col{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
         @media(max-width:720px) {
 
             .separator-bottom {
-    background-attachment: unset;
-    height: 265px;
-    background-size: contain;
-}
+                background-attachment: unset;
+                height: 265px;
+                background-size: contain;
+            }
+
             .locais-img-container {
-    height: 250px;
-}
+                height: 250px;
+            }
 
 
-.location {
-    background-size: cover;
-    height: inherit;
-    background-attachment: unset;
-}
+            .location {
+                background-size: cover;
+                height: inherit;
+                background-attachment: unset;
+            }
 
-nav.navbar.navbar-expand-lg.navbar-light.o_colored_level.o_cc.shadow-sm {
-    position: fixed;
-    width: 100%;
-    z-index: 99999999;
-}
+            nav.navbar.navbar-expand-lg.navbar-light.o_colored_level.o_cc.shadow-sm {
+                position: fixed;
+                width: 100%;
+                z-index: 99999999;
+            }
 
 
         }
@@ -419,7 +436,7 @@ nav.navbar.navbar-expand-lg.navbar-light.o_colored_level.o_cc.shadow-sm {
     <section>
         <div class="container-fluid">
             <div class="row">
-                <div>
+                <div class="location-col">
                     <iframe loading="lazy" src="https://ultradevelopment.github.io/dalimamaps.github.io/anima.html"
                         style="border:0;" width="100%" height="780px" frameborder="0"
                         data-ruffle-polyfilled=""></iframe>
@@ -678,14 +695,14 @@ nav.navbar.navbar-expand-lg.navbar-light.o_colored_level.o_cc.shadow-sm {
             });
         });
     </script>
-<script>
-    window.addEventListener("scroll", function () {
-    let parallax = document.querySelector(".parallax");
-    let scrollPosition = window.pageYOffset;
-    parallax.style.backgroundPositionY = scrollPosition * 0.5 + "px";
-});
+    <script>
+        window.addEventListener("scroll", function () {
+            let parallax = document.querySelector(".parallax");
+            let scrollPosition = window.pageYOffset;
+            parallax.style.backgroundPositionY = scrollPosition * 0.5 + "px";
+        });
 
-</script>
+    </script>
 </body>
 
 </html>
